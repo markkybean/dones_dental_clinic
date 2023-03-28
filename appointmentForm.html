@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text" href="index.html">Name</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+            
+    <!-- Header -->
+    <header class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <!-- <h1>Article Details</h1> -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+    
+
+
+
+    <div class="bf-container">
+        <div class="bf-body">
+            <div class="bf-head">
+                <h1>Booking Form</h1>
+                <p>Let's Go</p>
+            </div>
+            <form class="bf-body-box" action="form.php">
+
+                <div class="bf-row">
+                    <div class="bf-col-6">
+                        <p>Your Name</p>
+                        <input type="text" name="fname" id="fname" placeholder="Your name">
+                    </div>    
+                    <div class="bf-col-6">
+                        <p>Email Address</p>
+                        <input type="email" name="email" id="email" placeholder="Email Address">
+                    </div> 
+                    
+                    
+                </div>
+
+                <div class="bf-row">
+                    <div class="bf-col-6">
+                        <p>Select Date</p>
+                        <input type="date" name="date" id="date">
+                    </div>     
+                    <div class="bf-col-6">
+                        <p>Select number</p>
+                        <select name="s-select" id="">
+                            <option value="">Select Numbers</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div> 
+                    
+                    
+                </div>
+                <div class="bf-col-6">
+                    <p>Time</p>
+                    <input type="time" name="date" id="date">
+                </div>
+
+                <div class="bf-row">
+                    
+                    <div class="bf-col-12">
+                        <p>Messages</p>
+                        <textarea name="Messages" id="Messages" cols="3" rows="2"></textarea>
+                    </div> 
+                </div>  
+                
+                <div class="bf-row">
+                    
+                    <div class="bf-col-3">
+                        <input type="submit" value="Submit" id="submit">
+                    </div> 
+                </div> 
+
+
+            </form>
+
+            <div class="bf-footer">
+                <p>Dones Dental Clinic</p>
+            </div>
+
+
+        </div>
+    </div>
+        <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+        <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+        <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+        <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    h1{
+        font-size: 30px;
+        color:#fff;
+    }
+    p{
+        color: #fff;
+    }
+    a{
+        text-decoration: none;
+        color: blueviolet;
+    }
+    #submit{
+        background-color: #0022BD;
+    }
+    input, textarea, select{
+        width: 100%;
+        background-color: fff;
+        border: none;
+        outline: none;
+        margin-top: 5px;
+        resize: none;
+        /* color: fieldtext; */
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .bf-body-box{
+        padding: 10px;
+        margin: auto;
+    }
+    .bf-row{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0px;
+    }
+    .bf-col-12{
+        width: 100%;
+    }
+    .bf-col-3{
+        width: 30%;
+    }
+    .bf-col-6{
+        width: 40%;
+    }
+    .bf-head{
+        text-align: center;
+    }
+    .bf-head, .bf-footer{
+        background-color:#0022BD;
+        padding: 5px;
+    }
+    .bf-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        min-height: 60%;
+        overflow-y: auto;
+        padding: 20px;
+        /* background-image:linear-gradient(rgba(226, 229, 243, 0), rgba(18, 40, 148, 0.795)), url('../web/images/smilebg.jpg');
+        background-repeat: no-repeat; */
+    }
+    .bf-body{
+        width: 500px;
+        height: 100vh;
+        min-height: 40%;
+        padding: 50px;
+        background: rgba(0,0,0,.5);
+    }
+    @media screen and (max-width:600px) {
+        .bf-row{
+            flex-direction: column;
+            padding: 0;
+        }
+        .bf-col-12{
+            padding: 10px 0;
+            width: 100%;
+        }
+        .bf-col-3{
+            padding: 10px 0;
+            width: 30%;
+        }
+        .bf-col-6{
+            padding: 10px 0;
+            width: 100%;
+        }
+        .bf-container{
+            padding: 50px 15px;
+        }
+    }
+
+</style>
+</html>

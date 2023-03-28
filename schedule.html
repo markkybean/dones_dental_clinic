@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="loginBody">
+    <div class="container">
+        <div class="loginHeader">
+            <h1>Dones Dental Clinic</h1>
+            <p>Login</p>
+        </div>
+        <div class="loginBody">
+            <form action="">
+                <div class="loginInputsContainer">
+                    <label for="">Username</label>
+                    <input type="text">
+                </div>
+                <div class="loginInputsContainer">
+                    <label for="">Password</label>
+                    <input type="password">
+                </div>
+                <div class="loginButtonContainer">
+                    <button>Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<style>
+body#loginBody{
+	background: url('../web/images/smilebg.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+body{	
+	font-family: arial;
+}
+div.loginHeader{
+	text-align: center;
+}
+.alignLeft{
+	text-align: left;
+}
+div.loginHeader{
+	margin-bottom: 50px;
+}
+div.loginHeader h1{
+	font-size: 100px;
+	color: #0022BD;;
+	padding:0px;
+	margin:0px;
+}
+div.loginHeader p{
+	color:#0022BD;
+	font-size: 50px;
+	margin:0px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+div.loginHeader p:after{
+	content:'';
+	display: block;
+	height: 5px;
+	background: #0022BD;
+	margin:0 auto;
+}
+div.loginBody form{
+	margin:0 auto;
+	width: 450px;
+	background: rgba(0,0,0,.5);
+	padding:50px;
+	border:2px solid #fff;
+	border-radius: 8px;
+}
+div.loginInputsContainer{
+	margin-top:30px;
+}
+div.loginInputsContainer label{
+	display: block;
+	text-transform: uppercase;
+	font-size: 20px;	
+	font-weight: bold;
+	color:#fff;
+}
+div.loginInputsContainer input{
+	height: 30px;
+	width:100%;
+	border:2px solid #0022BD;
+	font-size:20px;
+	padding:5px;
+	text-align: center;
+	font-style: italic;
+}
+div.loginButtonContainer{
+	margin-top:40px;
+	text-align: center;
+}
+div.loginButtonContainer button{
+	font-size: 20px;
+	padding: 10px 40px;
+	background: #0022BD;
+	border:none;
+	color: #fff;
+}
+
+</style>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/10010c0a3c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="dashboardMainContainer">
+        <div class="dashboard_sidebar" id="dashboard_sidebar">
+            <h3 class="logo" id="logo"> Dones Dental Clinic</h3>
+            <div class="dashboard_sidebar_user">
+                <img src="images/logo.jpg" alt="user image" id="userImage">
+                <span>Admin</span>
+            </div>
+            <div class="dashboard_sidebar_menus">
+                <ul class="dashboard_menu_list">
+                    <li class="menuActive">
+                        <a href=""><i class="fa fa-dashboard"></i><span class="menuText"> Patients</span> </a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-dashboard"></i><span class="menuText"> Appointments</span> </a>
+                    </li>
+                    <!-- idadagdaadaagg -->
+                    <li>
+                        <a href=""><i class="fa fa-dashboard"></i><span class="menuText"> Doctors</span> </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="dashboard_content_container" id="dashboard_content_container">
+            <div class="dashboard_topNav">
+                <a href="" id="toggleBtn"><i class="fa fa-navicon"></i></a>
+                <a href="" id="logoutbtn"><i class="fa fa-power-off"></i> Log-out</a>
+            </div>
+            <div class="dashboard_content">
+                <div class="dashboard_content_main">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- script naman tayo huhuhuhu iyak iyak -->
+
+<script>
+    var sideBarIsOpen = true;
+    toggleBtn.addEventListener('click', (event)=>{
+
+        if(sideBarIsOpen){
+            event.preventDefault();
+            dashboard_sidebar.style.width='10%'
+            dashboard_sidebar.style.transition='0.5s all';
+            dashboardMainContainer.style.width='90%'
+            logo.style.fontSize='10px'
+            userImage.style.fontSize='60px'
+
+            menuIcons = document.getElementsByClassName('menuText');
+            for(var i=0; i<menuIcons.length;i++){
+                menuIcons[i].style.display = 'none';
+        }
+            document.getElementsByClassName('dashboard_menu_list')[0].style.textAlign = 'center';
+          //  console.log(menuIcons);      
+            sideBarIsOpen=false  
+        }
+        else{
+            event.preventDefault();
+            dashboard_sidebar.style.width='20%'
+            dashboardMainContainer.style.width='80%'
+            logo.style.fontSize='10px'
+            userImage.style.fontSize='50px'
+
+            menuIcons = document.getElementsByClassName('menuText');
+            for(var i=0; i<menuIcons.length;i++){
+                menuIcons[i].style.display = 'inline-block';
+        }
+            document.getElementsByClassName('dashboard_menu_list')[0].style.textAlign = 'normal';
+          //  console.log(menuIcons);
+            sideBarIsOpen=true
+        }
+
+    });
+</script>
+
+<!-- css of admin dashboard huhuhuhu kapagod -->
+
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+}
+#dashboardMainContainer{
+    display: flex;
+    flex-direction: row;
+}
+div.dashboard_sidebar{
+    width: 20%;
+    background: #6982F6;
+    height:100vh;
+}
+.logo{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+div.dashboard_content_container{
+    width: 80%;
+    background: #fff;
+}
+.dashboard_sidebar_user{
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+.dashboard_sidebar_user img{
+    width: 50px;
+    display: inline-block;
+    border: 2px solid #0022BD;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.dashboard_sidebar_user span{
+    top: 20%;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+}
+ul.dashboard_menu_list{
+    padding: 0;
+    margin-top: 20px;
+}
+ul.dashboard_menu_list li{
+    padding: 15px 15px;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+ul.dashboard_menu_list a{
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    display: block;
+    font-size: 20px;
+}
+ul.dashboard_menu_list a i{
+    font-size: 25px;
+}
+ul.dashboard_menu_list li.menuActive{
+    background: #0022BD;
+    color: #fff; 
+}
+ul.dashboard_menu_list li:hover{
+    background: #0022BD;
+    color: #fff;
+    transition: 0.3s all;
+}
+div.dashboard_topNav{
+    background: #0022BD;
+    padding: 20px;
+}
+.dashboard_topNav a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+a#logoutbtn{
+    float: right;
+}
+.dashboard_content{
+    padding: 50px 10px 10px 10px;
+}
+.dashboard_content{
+    background: #fff;
+    min-height: 800px;
+    height: 100%;
+}
+</style>
+
+
+</html>
